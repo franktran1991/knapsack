@@ -1,0 +1,19 @@
+Run: 
+/Applications/MAMP/bin/php/php5.6.2/bin/php artisan serve
+
+Best way:
+
+- Skinny Model + Skinny Controller 
+
+Model:
+- Knowledge Layer of Application, not Database layer
+- Dont need understanding whatsover of any http request, how we return or response
+- Validation at the model for readability
+
+Database:
+- Every model connect to DB by extending the Eloquent
+- Use migration to add/edit Db
+
+Routing:
+- Should use route name for all the form places or redirect. It will automatically update when we change in routing
+
